@@ -1,0 +1,45 @@
+apis:
+  openai:
+    api_key: "${OPENAI_API_KEY}"
+    base_url: "https://api.openai.com/v1"
+    model: "gpt-3.5-turbo" #gpt-3.5-turbo,  this is a more powerful, but expensive version
+    temperature: 0.1
+    max_tokens: 2000
+    retry_strategy:
+      attempts: 3
+      backoff_type: exponential
+      initial_delay: 1
+  
+  anthropic:
+    api_key: "${ANTHROPIC_API_KEY}"
+    base_url: "https://api.anthropic.com"
+    model: "claude-3-5-sonnet-20241022" #"claude-sonnet-4-20250514", this is a more powerful, but expensive version
+    temperature: 0.1
+    max_tokens: 2000
+
+workflow:
+  ai_a: "openai"
+  ai_b: "anthropic"
+  final_arbitrator: "anthropic"
+  retry_attempts: 3
+  retry_delay: 2
+
+paths:
+  bug_file: "bug.txt"
+  codebase_folder: "codebase"
+  prompts_folder: "prompts"
+  supported_extensions: [".py", ".js", ".java", ".cpp", ".c", ".h", ".cs", ".php", ".rb", ".go", ".rs", ".ts", ".jsx", ".tsx", ".vue", ".swift", ".kt", ".scala", ".r", ".sql", ".html", ".css", ".json", ".xml", ".yaml", ".yml", ".md", ".txt"]
+
+prompts:
+  bug_slayer: "bug_slayer_prompt.txt"
+  audit_consolidator: "audit_consolidator_prompt.txt"
+  final_consolidator: "final_consolidator_prompt.txt"
+
+output:
+  audit_report_a: "audit_report_A.md"
+  audit_report_b: "audit_report_B.md"
+  consolidation_a: "consolidation_A.md"
+  consolidation_b: "consolidation_B.md"
+  cross_audit_a_on_b: "cross_audit_A_on_B.txt"
+  cross_audit_b_on_a: "cross_audit_B_on_A.txt"
+  definitive_fixes: "definitive_fixes.md"
