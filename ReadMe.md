@@ -202,7 +202,7 @@ Pull requests are welcome! Please open an issue first to discuss major changes.
 
 MIT License
 
-Copyright (c) 2024 Matheus J. T. Vargas, PhD
+Copyright (c) 2024 CyAura AI
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -216,7 +216,7 @@ all copies or substantial portions of the Software.
 
 **Attribution Notice:** Any use of this software, in source or binary form,
 must include clear attribution to the original author:  
-**Matheus J. T. Vargas, PhD**
+**Matheus J. T. Vargas, PhD** or **CyAura AI**
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
