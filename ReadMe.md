@@ -21,6 +21,7 @@ The workflow automatically:
 2. Scans your source files in the `codebase/` folder (or a custom set of files).
 3. Runs a three-phase dialogue between two independent AIs and an arbitrator AI to cross-audit findings.
 4. Saves structured reports and a final **`definitive_fixes.md`** file in a versioned results folder (`bug0001_results/`, `bug0002_results/`, …).
+5. Note: different models have different allowed token lenghts. Complex and long codebases will exceed this limit.
 
 ---
 
