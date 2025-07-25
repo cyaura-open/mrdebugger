@@ -1,6 +1,6 @@
 # Multi-AI Bug Investigator
 
-A productivity tool that orchestrates multiple Large-Language Models (LLMs) (e.g. OpenAI GPT-4, Anthropic Claude) to **analyse a bug report, audit your codebase, and propose definitive fixes**.
+An unniversal debugger, which orchestrates multiple Large-Language Models (LLMs) (e.g. OpenAI GPT-4, Anthropic Claude) to **analyse a bug report, audit your codebase, and propose definitive fixes**.
 
 ## Table of Contents
 
